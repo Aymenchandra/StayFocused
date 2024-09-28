@@ -1,3 +1,11 @@
+# AlertDrive
+
+Website: [Demo](https://drive.google.com/file/d/1K_Nvkn9M_z9Q7KwOIOaH2vPNcQVlkBCr/view?usp=sharing)
+
+[AlertDrive] is an application to connect using facial recongnition and monitor driver attention.
+
+![AlertDrive](./home.png)
+
 #### Start drowsiness project
 ## cd drowsiness
 
@@ -17,7 +25,7 @@
 
 #### workflow application 
 
-1- first make sure that you have these folders: 
+1- first make sure that you have create these folders: 
     static/face
     static/face/unknown
 

@@ -78,7 +78,7 @@ count_yawn = 0
 while True: 
 	# Extract a frame 
 	frame = vs.read()
-	cv2.putText(frame, "Cliquer 'q' pour quitter", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 3) 
+	cv2.putText(frame, "Press 'q' to leave", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 3) 
 	# Resize the frame 
 	frame = imutils.resize(frame, width = 500)
 	# Convert the frame to grayscale 
@@ -96,7 +96,7 @@ while True:
 		(x, y, w, h) = face_utils.rect_to_bb(rect) 
 		cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 255), 2)	
 		# Put a number 
-		cv2.putText(frame, "Participant", (x - 10, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+		cv2.putText(frame, "Driver", (x - 10, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 		leftEye = shape[lstart:lend]
 		rightEye = shape[rstart:rend] 
 		mouth = shape[mstart:mend]

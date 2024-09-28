@@ -12,10 +12,9 @@
   }
 </script>
 
- <div  class="mainregister" style="position:relative;width: 400px;left:4px;background:white;height: 500px;box-shadow: black 12px 19px 19px;border-radius: 40px">
-<br>
-<br>
-<center><b style="font-size: 25px;"><h3 style="color : black;width:150px;border-radius: 40px" >Register</h3></b><br></center>
+<div
+  style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); text-align: center; width: 400px;">
+  <h1 style="text-align: center;">Register</h1>
 
 <form action="/register" method="post" enctype="multipart/form-data" >
 
@@ -24,50 +23,32 @@
   
 <br>
 <br>
-  <div class="form-group">
-    <input
-      autocomplete="off"
-      autofocus
-      class="form-control"
-      name="username"
-      placeholder="🗒 Username"
-      id ="hoverin"
-      type="text"
-      style="border-radius:50px"
-    />
-  </div>
+<input type="text" placeholder="Username" name="username"
+  style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
 
 
 
   {% if (messager == 1 ) %}
   <center>
    
-            <header class="inv" style="color:white;box-shadow: 5px 7px 15px black;border: 2px solid red;border-radius: 50px;background-color: red;width:200px">
+            <header class="inv" style="color:red">
 
-                 &#9997  Enter username.
+                 Enter username.
 
             </header>
             <br>
 </center>
 {% endif %}
-  <div class="form-group">
-    <input
-      class="form-control"
-      name="password"
-      placeholder="&#128273 Password"
-      id ="hoverin"
-      type="password"
-      style="border-radius:50px"
-    />
-    </div>
+<input type="password" placeholder="Password" name="password"
+style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
 
 
       {% if (messager == 2 ) %}
 
   <center>
-            <header  style="color:white;box-shadow: 5px 7px 15px black;border: 2px solid red;border-radius: 50px;background-color: red;width:200px">
+            <header  style="color:red">
 
-                  &#9997 Enter password.
+                Enter password.
 
             </header>
             <br>
@@ -75,35 +56,27 @@
  {% endif %}
 
   
-  <div class="form-group">
-    <input
-      class="form-control"
-      name="confirmation"
-      id ="hoverin"
-      placeholder="&#128273 Confirm Password"
-      type="password"
-      style="border-radius:50px"
-    />
-  </div>
+ <input type="password" placeholder="Confirm password" name="confirmation"
+ style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
 
     {% if (messager == 4 ) %}
   <center>
-            <header  style="color:white;box-shadow: 5px 7px 15px black;border: 2px solid red;border-radius: 50px;background-color: red;width:220px">
+            <header  style="color:red">
 
-                  &#9997 Enter confirm password.
+                  Enter confirm password.
 
             </header>
             </center>
  {% endif %}
 <br>
-  <button class="btn btn-success" style="border-radius:50px;width:200px" id="hoverinbtn" type="submit">Register</button>
+  <button style="background-color: #152315; color: white;margin-bottom: 5px; padding: 10px; border: none; border-radius: 5px; cursor: pointer; width: 100%;" type="submit">Register</button>
 
   {% if (messager == 3 ) %}
   <center>
     <br>
-            <header  style="color:white;box-shadow: 5px 7px 15px black;border: 2px solid red;border-radius: 50px;background-color: red;width:300px ">
+            <header  style="color:red">
 
-                   &#10060 Enter same password and confirm password.
+                   Enter same password and confirm password.
 
             </header>
               </center>
@@ -114,9 +87,9 @@
  {% if (messager == 5 ) %}
   <center>
     <br>
-            <header  style="color:white;box-shadow: 5px 7px 15px black;border: 2px solid red;border-radius: 50px;background-color: red;width:220px">
+            <header  style="color:red">
 
-                  &#9997 Username Already Taken.
+                  Username Already Taken.
 
             </header>
             </center>
